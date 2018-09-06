@@ -11,9 +11,24 @@ def extractfile(file_name):
 
     return keys
 
+def parse_file(file):
+    print('------------------------WORDGAME------------------------')
+
+    while True:
+        try:
+            keys = extractfile(file)
+            print('Loading...')
+            return keys
+
+        except:
+            print("Keep the 'dictionary.txt' in the same folder of this file")
+            time.sleep(10)
+            continue
+
+
 def solution(t):
     while True:
-        letters = list(i for i in input('Enter the letters: '))
+        letters = list(i for i in input('Enter the letters: ').strip())
 
         try:
             length = int(input('Enter the required length of word: '))
@@ -30,19 +45,6 @@ def solution(t):
             if t.search(i):
                 print(i)
         print()
-
-def parse_file(file):
-    print('------------------------WORDGAME------------------------')
-    print('Loading...')
-
-    try:
-        keys = extractfile(file)
-        return keys
-
-    except:
-        print("Keep the 'dictionary.txt' in the same folder of this file")
-        time.sleep(10)
-        parse_file(file)
 
 
 def main():
