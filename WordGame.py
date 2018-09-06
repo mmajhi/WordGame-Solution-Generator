@@ -12,8 +12,6 @@ def extractfile(file_name):
     return keys
 
 def parse_file(file):
-    print('------------------------WORDGAME------------------------')
-
     while True:
         try:
             keys = extractfile(file)
