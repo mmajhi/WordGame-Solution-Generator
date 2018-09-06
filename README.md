@@ -30,4 +30,4 @@ For using trie data structure the program runs very fast and efficiently. The ti
 A better _'dictionary.txt'_ file(with less irrelevant words) can be used for speeding up the loading time and less memory consumption.
 
 ### Author
-**Mayukh Majhi**
+**Mayukh Majhi** and [contributors](https://github.com/mmajhi/WordGame-Solution-Generator/network/members)
